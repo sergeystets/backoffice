@@ -1,0 +1,43 @@
+<div>
+  <div style="width:800px; margin:0 auto;">
+
+    <div style=" margin-top: 10px; width: 100%;text-align: center;">
+      <mat-card-title>Brand Quantity</mat-card-title>
+    </div>
+
+    <a style="margin-top: 10px; margin-bottom: 10px" mat-raised-button (click)="addBrand()">
+      <mat-icon>add</mat-icon>
+      Add brand</a>
+    <table mat-table [dataSource]="brandsDataSource" matSort
+           class="mat-elevation-z9">
+      <ng-container matColumnDef="brandId">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Id</th>
+        <td mat-cell *matCellDef="let brand">{{brand.brandId}}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="brandName">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Name</th>
+        <td mat-cell *matCellDef="let brand">{{brand.brandName}}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="quantity">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Quantity</th>
+        <td mat-cell *matCellDef="let brand">{{brand.quantity}}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="actions">
+        <th mat-header-cell *matHeaderCellDef></th>
+        <td mat-cell *matCellDef="let brand">
+          <button mat-flat-button (click)="updateBrand(brand.brandId)">
+            <mat-icon>edit</mat-icon>
+          </button>
+          <button mat-flat-button (click)="deleteBrand(brand.brandId)">
+            <mat-icon>delete</mat-icon>
+          </button>
+        </td>
+      </ng-container>
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+  </div>
+</div>
