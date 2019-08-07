@@ -9,7 +9,7 @@ Project includes 3 modules
 
 ### ETL
 ##### Prerequisites
-- Please, make sure ```Java 8``` is installed on your machine (run ```java -version``` to verify version installed).
+- Please, make sure ```JDK 8``` is installed on your machine (run ```javac -version``` to verify version installed).
 - Follow [this](https://dev.mysql.com/downloads/installer/) link to install ```MySQL DB```.
 
 ##### Build & Run
@@ -20,7 +20,7 @@ Project includes 3 modules
 
 ### Back Office API
 ##### Prerequisites
-- Please, make sure ```Java 8``` is installed on your machine (run ```java -version``` to verify version installed).
+- Please, make sure ```JDK 8``` is installed on your machine (run ```javac -version``` to verify version installed).
 - Follow [this](https://dev.mysql.com/downloads/installer/) link to install ```MySQL DB```.
 
 ##### Build & Run
@@ -33,11 +33,8 @@ API documentation (powered by [Swagger](https://swagger.io/tools/swagger-ui/)) i
 
 ### Back Office UI
 
-##### Prerequisites
-
-run ```ng -v``` to make sure ```Angular 7``` is installed. Otherwise follow the official [documentation](https://cli.angular.io/) to install Angular locally.
 
 ##### Build & Run
 - go to ```back-office-ui``` folder
 - run ```npm install``` to install all the required dependencies and packages 
-- run ```ng serve``` which will start an app server running on http://localhost:4200. Follow http://localhost:4200/back-office/ to open UI app in a browser.
+- run ```npm run ng serve``` which will start an app server running on http://localhost:4200. Follow http://localhost:4200/back-office/ to open UI app in a browser.
