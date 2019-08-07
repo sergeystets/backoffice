@@ -10,7 +10,7 @@ Project includes 3 modules
 ### ETL
 ##### Prerequisites
 - Please, make sure ```JDK 8``` is installed on your machine (run ```javac -version``` to verify version installed).
-- Use ```docker compose``` to run ```MySQL``` (```docker-compose.yml``` file is located in a project root)
+- Use ```docker compose up db``` to run ```MySQL``` (```docker-compose.yml``` file is located in a project root)
 
 ##### Build & Run
 - Navigate to ```etl``` directory
