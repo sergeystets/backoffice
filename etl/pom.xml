@@ -20,7 +20,7 @@
         <spring-boot-maven-plugin.version>2.1.3.RELEASE</spring-boot-maven-plugin.version>
         <spring-jdbc.version>5.1.6.RELEASE</spring-jdbc.version>
         <jcommander.version>1.72</jcommander.version>
-        <mysql-connector-java.version>5.1.46</mysql-connector-java.version>
+        <mysql-connector-java.version>8.0.16</mysql-connector-java.version>
         <opencsv.version>4.1</opencsv.version>
         <lombok.version>1.16.8</lombok.version>
         <maven-compiler-plugin.version>3.8.0</maven-compiler-plugin.version>
